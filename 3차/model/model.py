@@ -5,9 +5,9 @@ import numpy as np
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
 
-epoch = 150
+epoch = 1000
 batch = 16
-lr = 0.015
+lr = 0.001
 # Load the model
 model = load_model(
     f"epoch{epoch}batch{batch}lr{lr}/keras_Model.h5", compile=False)
